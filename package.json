@@ -62,6 +62,8 @@
     "prettier": "^1.9.2"
   },
   "dependencies": {
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "broccoli-react": "git+https://git@github.com/edd/broccoli-react.git#v0.9.0",
     "ember-auto-import": "^1.0.1",
     "ember-cli-babel": "^6.3.0",

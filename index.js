@@ -11,7 +11,10 @@ module.exports = {
       tree = react(tree, {
         transform: { es6module: true },
         babelOptions: {
-          plugins: ["transform-object-rest-spread"]
+          plugins: [
+            "transform-object-rest-spread",
+            "transform-class-properties"
+          ]
         }
       });
     }
