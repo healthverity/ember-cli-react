@@ -8,7 +8,12 @@ module.exports = {
 
   preprocessTree: function(type, tree) {
     if (type === 'js') {
-      tree = react(tree, { transform: { es6module: true } });
+      tree = react(tree, {
+        transform: { es6module: true },
+        babelOptions: {
+          plugins: ["transform-object-rest-spread"]
+        }
+      });
     }
 
     return tree;
